@@ -36,7 +36,7 @@ header{
     border-radius: 0.4rem;
 }
 .herobackground{
-    height: 30rem;
+    min-height: 30rem;
     background: var(--bgmain);
     background-size: cover;
     width: 100%;
@@ -46,10 +46,11 @@ header{
 }
 .hero{
     display: flex;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .heroitem{
     box-sizing: border-box;
@@ -67,7 +68,7 @@ header{
     border-radius: 0.7rem;
 }
 .heroimage{
-   width: 100%;
+   width: 30rem;
     height: 100%;
 }
 .heroitem h2{
@@ -77,8 +78,8 @@ header{
     font-size: 1.2rem;
 }
 .movielist{
-    background-color: var(--bgfour);
-    margin-top: -2.5rem;
+    background-color:#5b5e7e;
+    margin-top: -3.4rem;
     padding: 0;
 }
 .info{
@@ -86,28 +87,36 @@ header{
     padding: 0;
 }
 .info h2{
-    font-size: 3rem;
+    font-size: 4rem;
     text-align: center;
     font-weight: bolder;
+    color: var(--bgthird);
 }
 .infocontainer{
-    max-width: 80%;
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
     gap:2rem;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     padding: 0.6rem;
+    flex-wrap: wrap;
 }
 .infoitem{
-    flex: initial;
+    flex: auto;
     text-align: center;
-    padding:0.6rem;
+    box-sizing: border-box;
+    padding: 0.2rem;
+    max-width: 15rem;
+    max-height: 25rem;
+    background-color: rgb(150, 149, 135);
+    border:3px solid #113f67;
+    font-weight: 800;
+    font-size: 1.2rem
 }
 .movieimg{
-    width: 20vw;
-    height: 40vh;
+    width: 100%;
+    height: 20rem;
 }
 .quote{
     display: flex;
@@ -130,14 +139,18 @@ header{
 }
 .ctabackground{
     background-color: rgb(224, 225, 226);
-    padding: 6rem 17rem;
+    padding:2rem 0;
 }
 .ctacontainer{
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
     background-color: rgb(74, 136, 236);
     border-radius: 0.5rem;
+    flex-wrap: wrap;
+    width: 60%;
+    margin: auto;
+    padding:1rem;
 }
 .ctaitem{
     align-self: center;
