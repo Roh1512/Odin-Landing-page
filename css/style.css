@@ -17,8 +17,9 @@ header{
     display: flex;
     align-items: center;
     padding: 0px 9px;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 10px;
+    flex-wrap: wrap;
 }
 .nav h1{
     font-size: 2.3rem;
@@ -34,9 +35,10 @@ header{
     text-decoration: none;
     color:var(--bgthird);
     border-radius: 0.4rem;
+    flex: auto;
 }
 .herobackground{
-    min-height: 30rem;
+    min-height: 35rem;
     background: var(--bgmain);
     background-size: cover;
     width: 100%;
@@ -46,18 +48,19 @@ header{
 }
 .hero{
     display: flex;
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
 }
 .heroitem{
     box-sizing: border-box;
     height: 20rem;
-    flex: 1 1 0;
+    width: 25rem;
     text-align: center;
     color: var(--bgthird);
+    flex: auto;
 }
 .heroitem .signupbutton{
     padding: 0.9rem;
@@ -68,7 +71,7 @@ header{
     border-radius: 0.7rem;
 }
 .heroimage{
-   width: 30rem;
+   width: 100%;
     height: 100%;
 }
 .heroitem h2{
@@ -90,6 +93,7 @@ header{
     font-size: 4rem;
     text-align: center;
     font-weight: bolder;
+
 }
 .infocontainer{
     max-width: 100%;
